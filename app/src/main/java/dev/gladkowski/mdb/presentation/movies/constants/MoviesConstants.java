@@ -11,9 +11,9 @@ public class MoviesConstants {
     public static final int SPAN_COUNT = 2;
 
     /**
-     * Count of items before loading of the next page is initiated
+     * Count of items per page
      */
-    public static final int INVISIBLE_ITEMS_COUNT = 6;
+    public static final int ITEMS_PER_PAGE = 20;
 
     /**
      * Size of one column

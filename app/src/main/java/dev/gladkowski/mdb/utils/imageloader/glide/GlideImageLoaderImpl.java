@@ -55,6 +55,7 @@ public class GlideImageLoaderImpl implements ImageLoader {
                 .diskCacheStrategy(DiskCacheStrategy.DATA)
                 .skipMemoryCache(true)
                 .fitCenter()
+                .centerCrop()
                 .error(R.drawable.ic_launcher_background)
                 .into(imageView);
     }
