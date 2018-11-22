@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MDb</string>
+
+    <!--Network errors-->
+    <string name="error_no_internet">Please check your internet connection and try again</string>
+    <string name="error_socket_timeout">Server connection timed out, please try again later</string>
+    <string name="error_json">JSON syntax error occurred</string>
+    <string name="error_unknown">Unknown error occurred</string>
+    <string name="error_internal_server">Server is under maintenance, please try again later</string>
+    <string name="error_generic">Oops, something went wrong! Try again later</string>
+
+
 </resources>
