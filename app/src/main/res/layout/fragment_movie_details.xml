@@ -1,6 +1,5 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
@@ -60,8 +59,7 @@
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/ic_launcher_background" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/image_icon_release_date"
@@ -77,12 +75,12 @@
                 android:id="@+id/text_release_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/image_icon_release_date"
                 app:layout_constraintLeft_toRightOf="@+id/image_icon_release_date"
-                tools:text="1566215" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/image_icon_vote_average"
@@ -103,8 +101,7 @@
                 android:layout_marginLeft="4dp"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/image_icon_vote_average"
-                app:layout_constraintLeft_toRightOf="@+id/image_icon_vote_average"
-                tools:text="4.5" />
+                app:layout_constraintLeft_toRightOf="@+id/image_icon_vote_average" />
 
             <ImageView
                 android:id="@+id/image_icon_runtime"
@@ -125,8 +122,7 @@
                 android:layout_marginLeft="4dp"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/image_icon_runtime"
-                app:layout_constraintLeft_toRightOf="@+id/image_icon_runtime"
-                tools:text="4.5sdfsadf" />
+                app:layout_constraintLeft_toRightOf="@+id/image_icon_runtime" />
 
             <TextView
                 android:id="@+id/text_overview"
@@ -135,8 +131,7 @@
                 android:layout_marginTop="8dp"
                 android:textSize="18sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_poster"
-                tools:text="4.5sdfsadf" />
+                app:layout_constraintTop_toBottomOf="@+id/image_poster" />
 
         </android.support.constraint.ConstraintLayout>
 

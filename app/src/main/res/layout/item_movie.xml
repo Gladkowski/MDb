@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="220dp"
     android:layout_margin="8dp">
@@ -20,8 +19,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/ic_launcher_background" />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <FrameLayout
@@ -44,8 +42,7 @@
                 android:singleLine="true"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:textSize="14sp"
-                tools:text="Lolasdfklasdfjaslkdfjlaskjdflkasjdflkasjdfkljaslkdfjasdfasdf" />
+                android:textSize="14sp" />
         </FrameLayout>
 
     </android.support.constraint.ConstraintLayout>
