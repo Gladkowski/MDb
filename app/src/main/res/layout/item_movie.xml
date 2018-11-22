@@ -37,15 +37,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
                 android:ellipsize="end"
-                android:maxEms="8"
-                android:maxLength="24"
                 android:maxLines="1"
                 android:singleLine="true"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
-                tools:text="Lolasdfklasdfjaslkdfjlaskjdflkasjdflkasjdfkljaslkdfjasdfasdf" />
+                tools:text="Lolasdfklasdfjaslkdfjlaskjdflkasjdflkasjdfkljaslkdfjasdfasdfsdfsdfsd" />
         </FrameLayout>
 
     </android.support.constraint.ConstraintLayout>
