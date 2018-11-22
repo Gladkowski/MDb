@@ -20,6 +20,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildTypes.each {
+        it.buildConfigField 'String', 'TmdbApiKey', TmdbApiKey
+        it.buildConfigField 'String', 'TmdbBaseUrl', TmdbBaseUrl
+    }
 }
 
 def supportLibraryVersion = '27.1.1'
