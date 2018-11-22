@@ -6,6 +6,8 @@ import javax.inject.Singleton;
 import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
+import dev.gladkowski.mdb.utils.imageloader.ImageLoader;
+import dev.gladkowski.mdb.utils.imageloader.glide.GlideImageLoaderImpl;
 import dev.gladkowski.mdb.utils.rx.CompletableErrorHandler;
 import dev.gladkowski.mdb.utils.rx.ErrorProcessing;
 import dev.gladkowski.mdb.utils.rx.ErrorResourceProvider;
@@ -15,7 +17,7 @@ import dev.gladkowski.mdb.utils.rx.SingleErrorHandler;
 
 
 @Module
-public interface UtilModule {
+public interface UtilsModule {
 
     @Provides
     @Singleton
@@ -44,5 +46,9 @@ public interface UtilModule {
     @Binds
     @Singleton
     ErrorResourceProvider provideErrorResourceProvider(ErrorResourceProviderImpl resourceProvider);
+
+    @Binds
+    @Singleton
+    ImageLoader bindImageLoader(GlideImageLoaderImpl loader);
 
 }

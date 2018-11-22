@@ -9,5 +9,11 @@
     <string name="error_internal_server">Server is under maintenance, please try again later</string>
     <string name="error_generic">Oops, something went wrong! Try again later</string>
 
+    <!--Movies fragment-->
+    <string name="title_movies">Popular Movies</string>
+    <string name="title_loading">Loading</string>
+
+    <!--Content description-->
+    <string name="movie_details_poster_image">movie_details_poster_image</string>
 
 </resources>

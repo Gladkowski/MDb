@@ -3,4 +3,8 @@
     <!--Language settings-->
     <string name="language_en_us">en-US</string>
 
+    <!--Poster image loading settings-->
+    <string name="url_poster_w185">https://image.tmdb.org/t/p/w185</string>
+    <string name="url_poster_w500">https://image.tmdb.org/t/p/w500</string>
+
 </resources>
