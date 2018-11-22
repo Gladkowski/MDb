@@ -7,7 +7,10 @@ import dagger.Module;
 import dev.gladkowski.mdb.di.base.modules.BaseFragmentModule;
 import dev.gladkowski.mdb.presentation.movies.MoviesFragment;
 
-@Module(includes = {BaseFragmentModule.class, MoviesPresenterModule.class})
+@Module(includes = {BaseFragmentModule.class,
+        MoviesPresenterModule.class,
+        MoviesRepositoryModule.class,
+        MoviesUtilsModule.class})
 public interface MoviesModule {
 
     @Binds
