@@ -17,7 +17,8 @@ import dev.gladkowski.mdb.presentation.movies.MoviesFragment;
 @Module(includes = {BaseActivityModule.class,
         MainPresenterModule.class,
         BaseFragmentModule.class,
-        MoviesModule.class})
+        MoviesModule.class,
+})
 public interface MainModule {
 
     @Binds

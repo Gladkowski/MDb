@@ -4,6 +4,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import dev.gladkowski.mdb.data.network.MovieDetailsApi;
 import dev.gladkowski.mdb.data.network.MoviesApi;
 import retrofit2.Retrofit;
 
@@ -14,5 +15,11 @@ public interface ApiModule {
     @Provides
     static MoviesApi provideMoviesApi(Retrofit retrofit) {
         return retrofit.create(MoviesApi.class);
+    }
+
+    @Singleton
+    @Provides
+    static MovieDetailsApi provideMovieDetailsApi(Retrofit retrofit) {
+        return retrofit.create(MovieDetailsApi.class);
     }
 }
