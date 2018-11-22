@@ -9,6 +9,7 @@ import dev.gladkowski.mdb.presentation.movies.MoviesFragment;
 
 @Module(includes = {BaseFragmentModule.class,
         MoviesPresenterModule.class,
+        MoviesInteractorModule.class,
         MoviesRepositoryModule.class,
         MoviesUtilsModule.class})
 public interface MoviesModule {
