@@ -10,4 +10,9 @@ public class MainScreens {
      */
     public static final String MOVIES_PAGE = "MOVIES_PAGE";
 
+    /**
+     * Screen with detailed movie info
+     */
+    public static final String MOVIE_DETAILS_PAGE = "MOVIE_DETAILS_PAGE";
+
 }

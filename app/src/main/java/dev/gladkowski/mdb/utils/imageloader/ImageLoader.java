@@ -16,9 +16,14 @@ public interface ImageLoader {
     void setImageWithCallback(ImageView imageView, String url, ImageLoaderCallback callback);
 
     /**
-     * Set image
+     * Set image with center crop
      */
-    void setImage(ImageView imageView, String url);
+    void setImageCenterCrop(ImageView imageView, String url);
+
+    /**
+     * Set image that fits center
+     */
+    void setImageFitCenter(ImageView imageView, String url);
 
     /**
      * Clear image

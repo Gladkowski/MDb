@@ -8,9 +8,12 @@ import dagger.android.ContributesAndroidInjector;
 import dev.gladkowski.mdb.di.base.modules.BaseActivityModule;
 import dev.gladkowski.mdb.di.base.modules.BaseFragmentModule;
 import dev.gladkowski.mdb.di.base.scopes.ActivityScope;
+import dev.gladkowski.mdb.di.moviedeatils.MovieDetailsModule;
+import dev.gladkowski.mdb.di.moviedeatils.MovieDetailsScope;
 import dev.gladkowski.mdb.di.movies.MoviesModule;
 import dev.gladkowski.mdb.di.movies.MoviesScope;
 import dev.gladkowski.mdb.presentation.main.MainActivity;
+import dev.gladkowski.mdb.presentation.moviedetails.MovieDetailsFragment;
 import dev.gladkowski.mdb.presentation.movies.MoviesFragment;
 
 
@@ -28,4 +31,8 @@ public interface MainModule {
     @MoviesScope
     @ContributesAndroidInjector(modules = MoviesModule.class)
     MoviesFragment moviesFragmentInjector();
+
+    @MovieDetailsScope
+    @ContributesAndroidInjector(modules = MovieDetailsModule.class)
+    MovieDetailsFragment movieDetailsFragmentInjector();
 }

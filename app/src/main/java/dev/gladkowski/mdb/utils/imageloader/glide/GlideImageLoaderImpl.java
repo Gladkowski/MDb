@@ -49,13 +49,24 @@ public class GlideImageLoaderImpl implements ImageLoader {
     }
 
     @Override
-    public void setImage(ImageView imageView, String url) {
+    public void setImageCenterCrop(ImageView imageView, String url) {
         GlideApp.with(imageView.getContext())
                 .load(url)
                 .diskCacheStrategy(DiskCacheStrategy.DATA)
                 .skipMemoryCache(true)
                 .fitCenter()
                 .centerCrop()
+                .error(R.drawable.ic_launcher_background)
+                .into(imageView);
+    }
+
+    @Override
+    public void setImageFitCenter(ImageView imageView, String url) {
+        GlideApp.with(imageView.getContext())
+                .load(url)
+                .diskCacheStrategy(DiskCacheStrategy.DATA)
+                .skipMemoryCache(true)
+                .fitCenter()
                 .error(R.drawable.ic_launcher_background)
                 .into(imageView);
     }

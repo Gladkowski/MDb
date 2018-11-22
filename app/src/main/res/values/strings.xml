@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">MDb</string>
+    <string name="app_name">MovieDb</string>
+
+    <!--common-->
+    <string name="single_space">" "</string>
+    <string name="minutes_short">min</string>
 
     <!--Network errors-->
     <string name="error_no_internet">Please check your internet connection and try again</string>
@@ -13,7 +17,13 @@
     <string name="title_movies">Popular Movies</string>
     <string name="title_loading">Loading</string>
 
+    <!--Movie details fragment-->
+    <string name="no_available_overview">no available overview</string>
+    <string name="out_of_10">out of 10</string>
+    <string name="runtime_unknown">runtime unknown</string>
+
     <!--Content description-->
+    <string name="movie_details_backdrop_image">movie_details_backdrop_image</string>
     <string name="movie_details_poster_image">movie_details_poster_image</string>
 
 </resources>

@@ -24,6 +24,7 @@ import dev.gladkowski.mdb.presentation.common.activity.BaseActivity;
 import dev.gladkowski.mdb.presentation.common.constants.ActivityScreens;
 import dev.gladkowski.mdb.presentation.common.constants.MainScreens;
 import dev.gladkowski.mdb.presentation.common.fragment.BaseFragmentView;
+import dev.gladkowski.mdb.presentation.moviedetails.MovieDetailsFragment;
 import dev.gladkowski.mdb.presentation.movies.MoviesFragment;
 import ru.terrakok.cicerone.Navigator;
 import ru.terrakok.cicerone.NavigatorHolder;
@@ -117,6 +118,8 @@ public class MainActivity extends BaseActivity<MainPresenter, MainView>
                     switch (screenKey) {
                         case MainScreens.MOVIES_PAGE:
                             return MoviesFragment.newInstance();
+                        case MainScreens.MOVIE_DETAILS_PAGE:
+                            return MovieDetailsFragment.newInstance((Integer) data);
                     }
                     return null;
                 }

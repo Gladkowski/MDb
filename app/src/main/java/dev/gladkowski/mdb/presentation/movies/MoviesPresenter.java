@@ -9,6 +9,7 @@ import java.util.List;
 import dev.gladkowski.mdb.domain.movies.MoviesInteractor;
 import dev.gladkowski.mdb.entity.movies.presentation.BaseMovieItem;
 import dev.gladkowski.mdb.presentation.common.activity.BaseNetworkPresenter;
+import dev.gladkowski.mdb.presentation.common.constants.MainScreens;
 import dev.gladkowski.mdb.presentation.common.pagination.ViewController;
 import dev.gladkowski.mdb.presentation.movies.converter.MoviesViewModelConverter;
 import dev.gladkowski.mdb.presentation.movies.pagination.MoviesPaginator;
@@ -139,7 +140,7 @@ public class MoviesPresenter extends BaseNetworkPresenter<MoviesView> {
     }
 
     void onItemClicked(int id) {
-        //TODO: navigate to movie details
+        getRouter().navigateTo(MainScreens.MOVIE_DETAILS_PAGE, id);
     }
 
     /**

@@ -80,7 +80,7 @@ public class MovieAdapterDelegate extends AdapterDelegate<List<BaseItem>> {
         }
 
         private void setItem(MovieViewModel item) {
-            imageLoader.setImage(imageView, item.getPosterPath());
+            imageLoader.setImageCenterCrop(imageView, item.getPosterPath());
             textTitle.setText(item.getTitle());
             container.setOnClickListener(view -> movieItemCallback.onItemClick(item.getId()));
         }
