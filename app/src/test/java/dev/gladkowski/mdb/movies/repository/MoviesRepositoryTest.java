@@ -1,4 +1,4 @@
-package dev.gladkowski.mdb.rxutils.movies.repository;
+package dev.gladkowski.mdb.movies.repository;
 
 import org.junit.Before;
 import org.junit.Test;
